@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Developers - PlantGuard AI</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='styles.css') }}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-seedling"></i>
+                <span>PlantGuard AI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#features">Features</a></li>
+                <li><a href="/developers" class="active">Developers</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="developers-section">
+        <div class="section-header">
+            <h1>Meet Our Team</h1>
+            <p>The brilliant minds behind PlantGuard AI</p>
+        </div>
+        <div class="developers-grid">
+            <div class="developer-card">
+                <div class="developer-image">
+                    <img src={{ url_for('static', filename="images/Sayan_Golder.jpg") }} alt="Sayan Golder">
+                </div>
+                <h2>Sayan Golder</h2>
+                <p class="role">Full Stack Developer</p>
+                <p class="bio">Full-stack developer with expertise in AI and machine learning. Passionate about sustainable agriculture.</p>
+                <div class="social-links">
+                    <a href="https://github.com/btwitssayan" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sayan-golder-b0335330a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/sayanitsyou/profilecard/?igsh=MWg5eGs5OWxoZTY5aw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="developer-card">
+                <div class="developer-image">
+                    <img src={{ url_for('static', filename="images/Sweta_Singh.jpg") }} alt="Sweta Singh">
+                </div>
+                <h2>Sweta Singh</h2>
+                <p class="role">Full Stack Developer</p>
+                <p class="bio">Full-stack developer with expertise in UI/UX specialist with a keen eye for design. Creates intuitive and beautiful user experiences.</p>
+                <div class="social-links">
+                    <a href="https://github.com/SWETA-0708" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sweta-singh-588b06244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/itz_sweta_29/profilecard/?igsh=MXUwOTZhMjRhc3d4dw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="developer-card">
+                <div class="developer-image">
+                    <img src={{ url_for('static', filename="images/Kunal_Gautam.jpg") }} alt="Kunal Gautam">
+                </div>
+                <h2>Kunal Gautam</h2>
+                <p class="role">AI Specialist</p>
+                <p class="bio">Expert in computer vision and deep learning. Leads the development of our plant disease detection models.</p>
+                <div class="social-links">
+                    <a href="https://github.com/kunal654" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kunal-gautam-2981b2292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/its_kunal_29/profilecard/?igsh=MWg2eDFpOTc1bGFmaQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-seedling"></i>
+                <span>PlantGuard AI</span>
+            </div>
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/developers">Developers</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> PlantGuard AI. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src={{ url_for('static', filename='index.js') }}></script>
+</body>
+</html>
